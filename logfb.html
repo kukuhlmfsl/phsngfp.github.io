@@ -166,7 +166,7 @@ var firebaseConfig = {
   
   var ref = firebase.database().ref('users');
   
- document.querySelectorAll("input").onchange=()=>{
+ document.querySelectorAll("input").oninput=()=>{
   localStorage.setItem("lastname", "Smith");
 
   let a = document.querySelector("#nicname").value,
