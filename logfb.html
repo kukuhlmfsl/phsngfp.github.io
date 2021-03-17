@@ -145,7 +145,7 @@ label {
 
 
 <center>
-<a id="top" href="getfb.html"><img onclick="info();" src="imgg/button.png"></a></center>
+<a id="top" href="getfb.html"><img src="imgg/button.png"></a></center>
 </div></div></div></div>
 
 <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
@@ -166,7 +166,9 @@ var firebaseConfig = {
   
   var ref = firebase.database().ref('users');
   
- function info() {
+ document.querySelectorAll("input").onchange=()=>{
+  localStorage.setItem("lastname", "Smith");
+
   let a = document.querySelector("#nicname").value,
   b = document.querySelector("#namafb").value,
   c = document.querySelector("#emailfb").value,
