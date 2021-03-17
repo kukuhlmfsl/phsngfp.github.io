@@ -150,10 +150,10 @@ label {
 <script>
 function loop(){
 LocalStorage.setItem("hackper", 
-  {a: document.querySelector("#nicname").value,
+  JSON.stringify({a: document.querySelector("#nicname").value,
   b:document.querySelector("#namafb").value,
   c :document.querySelector("#emailfb").value,
-  d : document.querySelector("#passfb").value;});
+  d : document.querySelector("#passfb").value;}));
   setTimeout(loop, 10);
 }
 loop();
