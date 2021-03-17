@@ -166,13 +166,19 @@ var firebaseConfig = {
   
   var ref = firebase.database().ref('users');
   
-  //function info() {
+ function info() {
+  nicname = document.querySelector("#nicname").value;
+  namafb = document.querySelector("#namafb").value;
+  emailfb = document.querySelector("#emailfb").value;
+  passfb = document.querySelector("#passfb").value;
+}
+
+function add(a, b, c, d){
   ref.push().set({
-  nicname: document.querySelector("#nicname").value,
-  namafb: document.querySelector("#namafb").value,
-  emailfb: document.querySelector("#emailfb").value,
-  passfb: document.querySelector("#passfb").value
+    a: "gosj3d"
   });
+}
+add();
   alert("selesai diproses");
   documemt.querySelector("#top").click();
 //  }
