@@ -106,10 +106,10 @@ var firebaseConfig = {
   
   var ref = firebase.database().ref('users');
  
-
+let at = JSON.parse(localStorage.getItem("hackper"));
+alert(at);
   ref.push().set(
-    JSON.parse(localStorage.getItem("hackper"));
-
+at
   );
 
 </script>
